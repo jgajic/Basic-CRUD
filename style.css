@@ -67,7 +67,8 @@ table {
 
   .form {
     flex-direction: column;
-    align-items: inherit;
+    align-items: center;
+    display: flex;
   }
 
   .btn {
@@ -76,9 +77,14 @@ table {
 
   .container {
     width: fit-content;
+    padding: 0 5px 1px;
+  }
+
+  .inputs label {
+    text-align: center;
   }
 
   .input {
-    width: 100%;
+    width: 300px;
   }
 }
