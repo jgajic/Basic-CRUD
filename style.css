@@ -77,4 +77,8 @@ table {
   .container {
     width: fit-content;
   }
+
+  .input {
+    width: 100%;
+  }
 }
