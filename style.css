@@ -1,0 +1,80 @@
+:root {
+  --bs-border-color: #03101e;
+}
+
+body {
+  background-color: rgb(101, 107, 154);
+  background-image: url(./img.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+table {
+  vertical-align: middle !important;
+}
+
+.container {
+  box-shadow: rgb(0 0 0 / 16%) 12px 9px 4px, rgb(51 51 51) 0px 0px 14px 6px;
+  background-color: rgb(217, 225, 209);
+  padding-bottom: 1px;
+}
+
+.container:first-child label {
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    flex-direction: column;
+    align-items: inherit;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons {
+    margin-top: 0;
+  }
+
+  .container:first-child label {
+    margin-top: 0;
+  }
+
+  .input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  th,
+  td {
+    font-size: 14px;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: inherit;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .container {
+    width: fit-content;
+  }
+}
