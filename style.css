@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 :root {
   --bs-border-color: #03101e;
 }
 
 body {
-  background-color: rgb(101, 107, 154);
-  background-image: url(./img.webp);
+  background-image: url(background2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 table {
@@ -15,9 +21,10 @@ table {
 }
 
 .container {
-  box-shadow: rgb(0 0 0 / 16%) 12px 9px 4px, rgb(51 51 51) 0px 0px 14px 6px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.4);
   background-color: rgb(217, 225, 209);
   padding-bottom: 1px;
+  background-color: #ddd;
 }
 
 .container:first-child label {
@@ -28,11 +35,96 @@ table {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  padding-top: 40px;
+}
+
+thead tr th {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+tbody tr {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btnDodaj {
+  background-color: #00839f;
+  padding: 5px 25px;
+  border: none;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btnDodaj:hover {
+  background-color: #00829fa4;
+  border: none;
 }
 
 .buttons {
   margin-top: 15px;
+}
+
+.btn {
+  border-radius: 3px;
+}
+
+.table {
+  border: 1px solid #a7b1b3 !important;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.input {
+  padding: 5px 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.inputs label {
+  font-weight: 600;
+}
+
+.table {
+  --bs-table-striped-bg: rgb(158, 223, 223, 0.7);
+  --bs-table-bg: #eeeeee;
+}
+
+.table:hover {
+  --bs-table-striped-bg: rgb(158, 223, 223);
+}
+
+.btn-warning {
+  background-color: #00839f;
+  border: none;
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #00829fa4;
+  border: none;
+  color: white;
+}
+
+.btn-danger {
+  background-color: rgb(131, 2, 2);
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: rgba(131, 2, 2, 0.841);
 }
 
 @media screen and (max-width: 1000px) {
@@ -44,10 +136,13 @@ table {
   .inputs {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
   }
 
   .buttons {
     margin-top: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
   }
 
   .container:first-child label {
@@ -86,5 +181,14 @@ table {
 
   .input {
     width: 300px;
+  }
+
+  .buttons {
+    padding-left: 0;
+  }
+
+  thead tr th {
+    font-weight: 600;
+    font-size: 15px;
   }
 }

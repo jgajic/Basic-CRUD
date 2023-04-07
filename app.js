@@ -20,9 +20,9 @@ const osobe = [
         godine: 36
     },
     {
-        ime: 'Goran',
-        prezime: 'Planic',
-        godine: 54
+        ime: 'Snezana',
+        prezime: 'Raonic',
+        godine: 44
     },
     {
         ime: 'Zoran',
